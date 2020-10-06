@@ -14,8 +14,11 @@ public class FindNumberOfYears {
         
         // Convert to years in days
         long years = days / 365;
+        
+        // change to days per years in minutes
+        long daysPerYears = days % 365;
 
         // Show displays
-        System.out.println(years + " years and " + days + " days for " + val + " minutes");
+        System.out.println(years + " years and " + daysPerYears + " days for " + val + " minutes");
     }
 }
